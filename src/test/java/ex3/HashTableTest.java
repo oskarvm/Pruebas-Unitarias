@@ -1,4 +1,4 @@
-package ex2;
+package ex3;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -7,7 +7,7 @@ class HashTableTest {
 
     @Test
     void put() {
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("put1","1put");
         ht.put("put2","2put");
         ht.put("2","3put");
@@ -27,7 +27,7 @@ class HashTableTest {
     @Test
     void get() {
 
-        HashTable ht = new HashTable();
+        ex2.HashTable ht = new ex2.HashTable();
         ht.put("put1","1put");
         ht.put("put2","2put");
         ht.put("2","3put");

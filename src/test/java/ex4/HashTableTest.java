@@ -1,4 +1,4 @@
-package ex2;
+package ex4;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -33,11 +33,11 @@ class HashTableTest {
         ht.put("2","3put");
         ht.put("02","4put");
 
-        String sinColision = ht.get("put2");
-        String conColisionInicio = ht.get("put1");
-        String conColisionCentro = ht.get("2");
-        String conColisionFinal = ht.get("02");
-        String noExiste = ht.get("put3");
+        Object sinColision = ht.get("put2");
+        Object conColisionInicio = ht.get("put1");
+        Object conColisionCentro = ht.get("2");
+        Object conColisionFinal = ht.get("02");
+        Object noExiste = ht.get("put3");
 
         Assertions.assertEquals("2put",sinColision);
         Assertions.assertEquals("1put", conColisionInicio);
